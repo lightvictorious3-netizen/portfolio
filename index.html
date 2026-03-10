@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Victorious Tech | Portfolio</title>
+<link rel="icon" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Floating Social Icons -->
+<div class="social-icons">
+  <a href="https://www.facebook.com/profile.php?id=61585449514993" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://wa.me/2349026941913" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+  <a href="tel:09132808243" class="phone"><i class="fas fa-phone"></i></a>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="logo">Victorious Tech</div>
+  <nav id="navMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>VICTORIOUS TECH</h1>
+    <!-- Sliding tagline -->
+<div class="sliding-tagline">
+  Elevating your digital world
+</div>
+    <h2 class="typing"></h2>
+    <p>We design and develop modern digital experiences including AI tools, business platforms and educational systems.</p>
+    <a href="#projects" class="btn">View Projects</a>
+  </div>
+  <div class="hero-img">
+    <img src="profile.JPG" alt="Victorious Tech Profile">
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+  <h2>About Victorious Tech</h2>
+  <p>Victorious Tech is a modern technology brand focused on building professional websites, applications and digital products. Our goal is to create fast, clean and user-friendly systems that help businesses and schools grow online.</p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+  <h2>Our Skills</h2>
+  <div class="skill">
+    <p>HTML</p><div class="bar"><div class="progress html"></div></div>
+    <p>CSS</p><div class="bar"><div class="progress css"></div></div>
+    <p>JavaScript</p><div class="bar"><div class="progress js"></div></div>
+    <p>UI Design</p><div class="bar"><div class="progress design"></div></div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-container">
+    <div class="project-card" onclick="openModal('ai')">
+      <img src="ai_chat.JPg" alt="AI Interface">
+      <div class="overlay">
+        <h3>AI Interface</h3>
+        <p>A modern AI interface designed to interact with users through smart responses and clean UI.</p>
+      </div>
+    </div>
+    <div class="project-card" onclick="openModal('betting')">
+      <img src="betting.jpg" alt="Betting Interface">
+      <div class="overlay">
+        <h3>Betting Interface</h3>
+        <p>A responsive betting dashboard with live odds, user account features and modern layout.</p>
+      </div>
+    </div>
+    <div class="project-card" onclick="openModal('school')">
+      <img src="school-project.JPG" alt="School Website">
+      <div class="overlay">
+        <h3>School Website</h3>
+        <p>A secondary school learning platform with login system, subjects and course materials.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Phone: 09132808243</p>
+  <p>WhatsApp: 09026941913</p>
+  <p>Facebook: Light Victorious</p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 Victorious Tech</p>
+</footer>
+
+<!-- Fullscreen Project Modal -->
+<div id="projectModal" class="modal">
+  <span class="close" onclick="closeModal()">×</span>
+  <img class="modal-content" id="modalImg">
+  <div class="modal-text">
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+  </div>
+  <span class="prev" onclick="prevProject()">&#10094;</span>
+  <span class="next" onclick="nextProject()">&#10095;</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
